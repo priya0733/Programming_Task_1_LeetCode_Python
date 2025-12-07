@@ -1,0 +1,14 @@
+# --------------------------------------------------------------
+# Problem: Shuffle the Array
+# Platform: LeetCode
+# Difficulty: Easy
+# Language: Python 3.x
+# --------------------------------------------------------------
+
+class Solution:
+    def shuffle(self, nums: list[int], n: int) -> list[int]:
+        result = []
+        for i in range(n):
+            result.append(nums[i])
+            result.append(nums[n + i])
+        return result
